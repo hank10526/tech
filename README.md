@@ -4,7 +4,7 @@
 
 ## 🌐 線上瀏覽
 
-👉 **[https://你的帳號.github.io/tech/](https://你的帳號.github.io/tech/)**
+👉 **[https://hank10526.github.io/tech/](https://hank10526.github.io/tech/)**
 
 ---
 
