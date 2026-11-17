@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevNotes — 個人技術速查庫</title>
+  <meta name="description" content="Git、Linux、Docker、Frontend 常用指令速查，支援即時搜尋與一鍵複製。" />
+
+  <!-- 字體 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header>
+    <div class="header-inner">
+      <div class="logo-row">
+        <div class="logo-icon">⚡</div>
+        <h1><span>Dev</span>Notes</h1>
+        <span class="subtitle">個人技術速查庫</span>
+      </div>
+      <div class="search-wrap">
+        <span class="search-icon">🔍</span>
+        <input
+          id="search-input"
+          type="search"
+          placeholder="搜尋指令、說明或標籤… (例如: git branch, chmod)"
+          autocomplete="off"
+          spellcheck="false"
+        />
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== Filter Bar ===== -->
+  <nav class="filter-bar" id="filter-bar" aria-label="分類過濾">
+    <span class="filter-label">分類：</span>
+    <!-- 由 app.js 動態生成 -->
+  </nav>
+
+  <!-- ===== Main Content ===== -->
+  <main>
+    <div class="stats-bar">
+      <span id="result-count"></span>
+      <span>🟢 beginner &nbsp; 🟡 intermediate &nbsp; 🔴 advanced</span>
+    </div>
+    <div class="notes-grid" id="notes-grid">
+      <!-- 由 app.js 動態生成 -->
+    </div>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <p>
+      Built with ❤️ &amp; <a href="AGENTS.md" target="_blank">AGENTS.md</a>
+      &nbsp;·&nbsp;
+      <a href="https://github.com" target="_blank">GitHub</a>
+    </p>
+  </footer>
+
+  <!-- 資料庫（必須在 app.js 之前載入）-->
+  <script src="data/notes.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
